@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Todo List DApp</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link href="index.css" rel="stylesheet" type="text/css">
+    <title>Todo List DApp</title>
+</head>
+
+<body body style="background: #BCE0FD">
+    <ul class="navbar-nav px-3">
+        <li class="nav-item text-nowrap d-none d-sm-none d-sm-block">
+            <small><a class="nav-link"><span id="account"></span></a></small>
+        </li>
+    </ul>
+    </nav>
+    <div class="card-container my-5 border-left-0">
+        <div class="icon-circle">
+            <img class="px-2 py-2" src="https://github.com/gupta-shrinath/Bloc/raw/gupta-shrinath/images/add-list.png"
+                alt="icon">
+        </div>
+
+        <h2 class="bloc text-white"><strong>Todo List</strong></h1>
+            <p id="taskCount" class="task-count text-white">0 Tasks</p>
+
+            <!-- Floating Action Button -->
+            <div class="task-card"> <button id="fab" class="fab float-right" data-toggle="modal"
+                    data-target="#add-task-container">
+                    <img class="m-auto" src="https://github.com/gupta-shrinath/Bloc/raw/gupta-shrinath/images/plus.png"
+                        alt="" height="16" width="16">
+                </button>
+                <!-- #Floating Action Button -->
+
+                <!-- Task List-->
+                <ul id="taskList" class="list-unstyled" hidden="">
+                    <h1 class="listOrder">Uncompleted</h1>
+                    <div class="taskTemplate" class="checkbox" style="display: none">
+                        <label>
+                            <input type="checkbox" />
+                            <span class="content">Task content</span>
+                        </label>
+                    </div>
+                </ul>
+                <ul id="completedTaskList" class="list-unstyled" hidden="">
+                    <h1 class="listOrder">Completed</h1>
+                </ul>
+                <div id="loader" class="text-center">
+                    <p class="text-center">Loading...</p>
+                </div>
+                <!-- #Task List-->
+
+                <!-- Add Task Modal -->
+                <div id="add-task-container" class="modal add-task-container" data-backdrop="static">
+                    <div class="container">
+                        <button type="button" class="btn modal-default-close" data-dismiss="modal"
+                            aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <div class="col mx-2" id="content">
+                            <h5 class="text-primary text-center mt-4">New Task</h5>
+                            <input id="newTask" class="mt-3" type="text">
+                            <input type="submit" hidden="">
+                            <button type="button" data-dismiss="modal" class="btn btn-primary btn-block mt-3"
+                                onclick="App.createTask(); return false;">Add
+                                Task</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- #Add Task Modal -->
+            </div>
+    </div>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@truffle/contract@4.3.5/dist/truffle-contract.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/web3@latest/dist/web3.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/ethereum/web3.js@1.0.0-beta.36/dist/web3.min.js"
+        integrity="sha256-nWBTbvxhJgjslRyuAKJHK+XcZPlCnmIAAMixz6EefVk=" crossorigin="anonymous"></script>
+
+    <!-- App and related files JS-->
+    <script src="app.js"></script>
+</body>
+
+</html>

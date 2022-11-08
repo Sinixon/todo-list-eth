@@ -1,0 +1,130 @@
+{
+    "contractName": "TodoList",
+    "abi": [
+        {
+            "inputs": [],
+            "name": "taskCount",
+            "outputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "",
+                    "type": "uint256"
+                }
+            ],
+            "stateMutability": "view",
+            "type": "function"
+        }
+    ],
+    "metadata": "{\"compiler\":{\"version\":\"0.8.17+commit.8df45f5f\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[],\"name\":\"taskCount\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"d:/todo-list-dapp-blockchain/migrations/TodoList.sol\":\"TodoList\"},\"evmVersion\":\"london\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[]},\"sources\":{\"d:/todo-list-dapp-blockchain/migrations/TodoList.sol\":{\"keccak256\":\"0x139810801137064cd115c9094cbd6d79afbe4e8d54a9f05064e38f1087b6c675\",\"license\":\"AGPL-3.0-only\",\"urls\":[\"bzz-raw://0a31efbf9939c5d89b5f45ebad0316aa0bd9100ad524278745283a1afee774b4\",\"dweb:/ipfs/QmXv5qjQmQ15Mp33j9uTG3fm31UwSjnkEn6xQ6KoFnwgch\"]}},\"version\":1}",
+    "bytecode": "608060405260008055348015601357600080fd5b50607d806100226000396000f3fe6080604052348015600f57600080fd5b506004361060285760003560e01c8063b6cb58a514602d575b600080fd5b603560005481565b60405190815260200160405180910390f3fea2646970667358221220dc95520ac048167e6b7f88d6b3a3d0d46ae1abaa9b501b1d04248bb365f6d71564736f6c63430008110033",
+    "deployedBytecode": "6080604052348015600f57600080fd5b506004361060285760003560e01c8063b6cb58a514602d575b600080fd5b603560005481565b60405190815260200160405180910390f3fea2646970667358221220dc95520ac048167e6b7f88d6b3a3d0d46ae1abaa9b501b1d04248bb365f6d71564736f6c63430008110033",
+    "sourceMap": "71:71:0:-:0;;;120:1;96:25;;71:71;;;;;;;;;;;;;;;;",
+    "deployedSourceMap": "71:71:0:-:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;96:25;;;;;;;;;160::1;;;148:2;133:18;96:25:0;;;;;;",
+    "sourcePath": "d:/todo-list-dapp-blockchain/migrations/TodoList.sol",
+    "compiler": {
+        "name": "solc",
+        "version": "0.8.17+commit.8df45f5f"
+    },
+    "ast": {
+        "absolutePath": "d:/todo-list-dapp-blockchain/migrations/TodoList.sol",
+        "exportedSymbols": {
+            "TodoList": [
+                5
+            ]
+        },
+        "id": 6,
+        "license": "AGPL-3.0-only",
+        "nodeType": "SourceUnit",
+        "nodes": [
+            {
+                "id": 1,
+                "literals": [
+                    "solidity",
+                    "^",
+                    "0.8",
+                    ".17"
+                ],
+                "nodeType": "PragmaDirective",
+                "src": "43:24:0"
+            },
+            {
+                "abstract": false,
+                "baseContracts": [],
+                "canonicalName": "TodoList",
+                "contractDependencies": [],
+                "contractKind": "contract",
+                "fullyImplemented": true,
+                "id": 5,
+                "linearizedBaseContracts": [
+                    5
+                ],
+                "name": "TodoList",
+                "nameLocation": "80:8:0",
+                "nodeType": "ContractDefinition",
+                "nodes": [
+                    {
+                        "constant": false,
+                        "functionSelector": "b6cb58a5",
+                        "id": 4,
+                        "mutability": "mutable",
+                        "name": "taskCount",
+                        "nameLocation": "108:9:0",
+                        "nodeType": "VariableDeclaration",
+                        "scope": 5,
+                        "src": "96:25:0",
+                        "stateVariable": true,
+                        "storageLocation": "default",
+                        "typeDescriptions": {
+                            "typeIdentifier": "t_uint256",
+                            "typeString": "uint256"
+                        },
+                        "typeName": {
+                            "id": 2,
+                            "name": "uint",
+                            "nodeType": "ElementaryTypeName",
+                            "src": "96:4:0",
+                            "typeDescriptions": {
+                                "typeIdentifier": "t_uint256",
+                                "typeString": "uint256"
+                            }
+                        },
+                        "value": {
+                            "hexValue": "30",
+                            "id": 3,
+                            "isConstant": false,
+                            "isLValue": false,
+                            "isPure": true,
+                            "kind": "number",
+                            "lValueRequested": false,
+                            "nodeType": "Literal",
+                            "src": "120:1:0",
+                            "typeDescriptions": {
+                                "typeIdentifier": "t_rational_0_by_1",
+                                "typeString": "int_const 0"
+                            },
+                            "value": "0"
+                        },
+                        "visibility": "public"
+                    }
+                ],
+                "scope": 6,
+                "src": "71:71:0",
+                "usedErrors": []
+            }
+        ],
+        "src": "43:99:0"
+    },
+    "functionHashes": {
+        "taskCount()": "b6cb58a5"
+    },
+    "gasEstimates": {
+        "creation": {
+            "codeDepositCost": "25000",
+            "executionCost": "5081",
+            "totalCost": "30081"
+        },
+        "external": {
+            "taskCount()": "2261"
+        }
+    }
+}
